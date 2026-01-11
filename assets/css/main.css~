@@ -2996,7 +2996,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		min-height: 10em;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3907,3 +3907,49 @@ input, select, textarea {
 			}
 
 		}
+
+		
+		/* Sidebar avatar */
+
+		#sidebar .sidebar-avatar{
+		    width: 110px;
+		    height: 110px;
+		    margin: 0 0 1.25em auto;  /* 跟菜单之间留点距离 */
+		    border-radius: 50%;
+		    overflow: hidden;
+		    display: inline-block; /* 配合 text-align:right，会靠右 */
+		}
+		
+		#sidebar .sidebar-avatar img{
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		    display: block;
+		}
+
+		/* ===== features -> image grid ===== */
+.features.features-images section{
+  padding: 0 !important;              /* 去掉原来为 icon/文字留的内边距 */
+}
+
+.features.features-images section .image{
+  margin: 0 !important;               /* 去掉 .image.fit 默认的 margin-bottom: 2em */
+  width: 100%;
+}
+
+.features.features-images section .image img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;                  /* 裁切填满格子 */
+  border-radius: 0.25em;
+}
+
+/* 让每个格子有一个稳定的高度（可调） */
+.features.features-images section{
+  height: 260px;                      /* 你想更矮就 180px，更高就 260px */
+}
+
+.features.features-images section .image{
+  height: 100%;
+}

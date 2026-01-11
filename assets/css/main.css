@@ -3953,3 +3953,14 @@ input, select, textarea {
 .features.features-images section .image{
   height: 100%;
 }
+
+<style>
+  .section { margin: 2rem 0; }
+  .timeline { list-style: none; padding: 0; margin: 1.25rem 0 0; }
+  .timeline-item { padding: 1rem 1.25rem; border-left: 2px solid #ccc; margin: 0 0 1rem 0.5rem; }
+  .timeline-item h3 { margin: 0 0 0.35rem; opacity: 0.45; font-size: 1.05rem; }
+  .meta { margin: 0 0 0.75rem; opacity: 0.85; line-height: 1.4; }
+  .sep { margin: 0 0.4rem; }
+  .timeline-item ul { margin: 0; padding-left: 1.1rem; }
+  .timeline-item li { margin: 0.25rem 0; }
+</style>
