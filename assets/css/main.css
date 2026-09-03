@@ -3927,6 +3927,19 @@ input, select, textarea {
 		    display: block;
 		}
 
+		/* Keep the portrait fully inside the compact top navigation. */
+		@media screen and (min-width: 737px) and (max-width: 1280px) {
+			#sidebar .sidebar-avatar {
+				-webkit-flex: 0 0 2.5em;
+				-ms-flex: 0 0 2.5em;
+				flex: 0 0 2.5em;
+				align-self: center;
+				width: 2.5em;
+				height: 2.5em;
+				margin: 0 1em 0 0;
+			}
+		}
+
 		/* ===== features -> image grid ===== */
 .features.features-images section{
   padding: 0 !important;              /* 去掉原来为 icon/文字留的内边距 */
