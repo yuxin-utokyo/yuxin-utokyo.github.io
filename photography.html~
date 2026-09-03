@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Photography — Yuxin U. Wu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="A photography collection by Yuxin U. Wu." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/photography.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload photography-page">
+		<header class="gallery-header">
+			<a class="gallery-back" href="index.html#two" aria-label="Back to homepage"><span aria-hidden="true">←</span> Home</a>
+			<div class="gallery-title">
+				<p class="gallery-kicker">What I like</p>
+				<h1>Photography</h1>
+				<p>Snow-buried cities, quiet structures, and fragments of everyday life.</p>
+			</div>
+			<p class="gallery-count">15 photographs</p>
+		</header>
+
+		<main class="gallery-shell">
+			<div class="photo-grid" aria-label="Photography collection">
+				<a class="photo-card photo-card--wide" href="images/like1.jpg"><img src="images/like1.jpg" alt="Snow-covered city seen from above" width="1440" height="810" /></a>
+				<a class="photo-card photo-card--wide" href="images/like2.jpg"><img src="images/like2.jpg" alt="A quiet winter landscape" width="1080" height="605" loading="lazy" /></a>
+				<a class="photo-card" href="images/like3.jpg"><img src="images/like3.jpg" alt="A vertical study of place and light" width="1080" height="1620" loading="lazy" /></a>
+				<a class="photo-card photo-card--wide" href="images/like4.jpg"><img src="images/like4.jpg" alt="Architecture in the landscape" width="1216" height="812" loading="lazy" /></a>
+				<a class="photo-card" href="images/like5.jpg"><img src="images/like5.jpg" alt="A quiet architectural detail" width="1080" height="1620" loading="lazy" /></a>
+				<a class="photo-card photo-card--wide" href="images/like6.jpg"><img src="images/like6.jpg" alt="A landscape study" width="810" height="648" loading="lazy" /></a>
+				<a class="photo-card" href="images/like8.JPG"><img src="images/like8.JPG" alt="A vertical city scene" width="810" height="1216" loading="lazy" /></a>
+				<a class="photo-card" href="images/like9.JPG"><img src="images/like9.JPG" alt="Light and shadow in the city" width="1080" height="1620" loading="lazy" /></a>
+				<a class="photo-card" href="images/like10.JPG"><img src="images/like10.JPG" alt="A fleeting everyday scene" width="1080" height="1620" loading="lazy" /></a>
+				<a class="photo-card" href="images/like11.JPG"><img src="images/like11.JPG" alt="An architectural observation" width="1440" height="2160" loading="lazy" /></a>
+				<a class="photo-card" href="images/like12.JPG"><img src="images/like12.JPG" alt="A quiet moment outdoors" width="1440" height="2160" loading="lazy" /></a>
+				<a class="photo-card photo-card--wide" href="images/like13.JPG"><img src="images/like13.JPG" alt="A wide view of the landscape" width="1440" height="810" loading="lazy" /></a>
+				<a class="photo-card photo-card--wide" href="images/like15.JPG"><img src="images/like15.JPG" alt="A distant landscape" width="1921" height="1080" loading="lazy" /></a>
+				<a class="photo-card" href="images/like16.JPG"><img src="images/like16.JPG" alt="A vertical study in muted color" width="1080" height="1620" loading="lazy" /></a>
+				<a class="photo-card" href="images/like17.JPG"><img src="images/like17.JPG" alt="The final photograph in the collection" width="1080" height="1751" loading="lazy" /></a>
+			</div>
+		</main>
+
+		<div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+			<button class="lightbox-close" type="button" aria-label="Close photo viewer">×</button>
+			<button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photograph">←</button>
+			<figure><img src="" alt="" /><figcaption aria-live="polite"></figcaption></figure>
+			<button class="lightbox-nav lightbox-next" type="button" aria-label="Next photograph">→</button>
+		</div>
+
+		<footer class="gallery-footer"><p>© Yuxin U. Wu</p></footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/photography.js"></script>
+	</body>
+</html>

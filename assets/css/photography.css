@@ -1,0 +1,234 @@
+.photography-action {
+	margin-top: 2.5em;
+}
+
+.photography-page {
+	background: #171321;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.gallery-header {
+	display: grid;
+	grid-template-columns: 1fr minmax(20rem, 50rem) 1fr;
+	align-items: start;
+	gap: 2rem;
+	padding: 4rem clamp(1.5rem, 5vw, 6rem) 3.5rem;
+	background: linear-gradient(135deg, #312450 0%, #5e42a6 55%, #b74e91 135%);
+}
+
+.gallery-back {
+	width: max-content;
+	border-bottom: 0;
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.gallery-back span {
+	margin-right: 0.55rem;
+}
+
+.gallery-title {
+	text-align: center;
+}
+
+.gallery-title h1 {
+	margin: 0 0 0.35em;
+	font-size: clamp(2.8rem, 8vw, 6.5rem);
+	letter-spacing: -0.045em;
+}
+
+.gallery-title p:last-child {
+	max-width: 37rem;
+	margin: 0 auto;
+	font-size: 1rem;
+}
+
+.gallery-kicker,
+.gallery-count {
+	font-size: 0.65rem;
+	font-weight: 700;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+}
+
+.gallery-kicker {
+	margin-bottom: 1rem;
+	color: rgba(255, 255, 255, 0.55);
+}
+
+.gallery-count {
+	justify-self: end;
+	margin-top: 0.15rem;
+	white-space: nowrap;
+}
+
+.gallery-shell {
+	max-width: 108rem;
+	margin: 0 auto;
+	padding: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+.photo-grid {
+	columns: 3 20rem;
+	column-gap: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+.photo-card {
+	position: relative;
+	display: block;
+	margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+	border: 0;
+	break-inside: avoid;
+	overflow: hidden;
+	background: #231d31;
+	cursor: zoom-in;
+}
+
+.photo-card img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.photo-card::after {
+	position: absolute;
+	inset: 0;
+	content: '';
+	background: linear-gradient(to top, rgba(23, 19, 33, 0.18), transparent 35%);
+	opacity: 0;
+	transition: opacity 0.35s ease;
+}
+
+.photo-card:hover img,
+.photo-card:focus-visible img {
+	transform: scale(1.018);
+	filter: brightness(1.04);
+}
+
+.photo-card:hover::after,
+.photo-card:focus-visible::after {
+	opacity: 1;
+}
+
+.photo-card:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 4px;
+}
+
+.lightbox[hidden] {
+	display: none;
+}
+
+.lightbox {
+	position: fixed;
+	z-index: 10001;
+	inset: 0;
+	display: grid;
+	grid-template-columns: 4rem minmax(0, 1fr) 4rem;
+	align-items: center;
+	background: rgba(10, 8, 14, 0.96);
+	backdrop-filter: blur(14px);
+}
+
+.lightbox figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 2.5rem 1rem;
+}
+
+.lightbox figure img {
+	max-width: 100%;
+	max-height: calc(100vh - 7rem);
+	object-fit: contain;
+	box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.35);
+}
+
+.lightbox figcaption {
+	min-height: 1.5rem;
+	margin-top: 1rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.13em;
+	text-transform: uppercase;
+}
+
+.lightbox button {
+	border: 0;
+	box-shadow: none;
+	color: #fff !important;
+	font-size: 1.4rem;
+}
+
+.lightbox-nav {
+	padding: 0;
+}
+
+.lightbox-close {
+	position: absolute;
+	z-index: 1;
+	top: 1rem;
+	right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	font-size: 2rem !important;
+}
+
+.gallery-footer {
+	padding: 1rem 1.5rem 3rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+body.lightbox-open {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 736px) {
+	.gallery-header {
+		grid-template-columns: 1fr auto;
+		gap: 2.5rem 1rem;
+		padding-top: 2rem;
+	}
+
+	.gallery-title {
+		grid-column: 1 / -1;
+		grid-row: 2;
+		text-align: left;
+	}
+
+	.gallery-title p:last-child {
+		margin-left: 0;
+	}
+
+	.gallery-count {
+		grid-column: 2;
+	}
+
+	.photo-grid {
+		columns: 2 9rem;
+	}
+
+	.lightbox {
+		grid-template-columns: 3rem minmax(0, 1fr) 3rem;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.photo-grid {
+		columns: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.photo-card img {
+		transition: none;
+	}
+}
